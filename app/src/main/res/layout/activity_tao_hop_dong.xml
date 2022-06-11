@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaoHopDongActivity">
+    <TextView
+        android:id="@+id/txtLHopDong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimary"
+        android:hint="Tên khách hàng"
+        android:textAlignment="center"
+        android:text="Thông tin hợp đồng"
+        android:textColorHint="@color/black"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/txtTienCoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLHopDong"
+        android:hint=" Nhập tiền cọc"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtNgayThue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTienCoc"
+        android:hint="Chọn  ngày thuê phòng"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:inputType="date"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtNgayTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNgayThue"
+        android:hint="Chọn  ngày trả phòng"
+        android:inputType="date"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"></EditText>
+
+
+    <Button
+        android:id="@+id/btnThemTTHDong"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txtNgayTra"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/round_bg"
+        android:text="Tạo Hợp Đồng"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/btnComBacAddHDong"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnThemTTHDong"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_bg"
+        android:textColor="@android:color/white"
+        android:text="Come Back"
+        android:textAlignment="center"></Button>
+
+
+</RelativeLayout>

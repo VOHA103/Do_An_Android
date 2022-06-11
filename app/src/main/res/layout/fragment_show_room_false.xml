@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentShowRoomFalse">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btnTTPTr"
+        android:layout_width="match_parent"
+        android:text="Thông Tin Phòng Trống"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"></Button>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roomList_Null"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnTTPTr"
+        android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

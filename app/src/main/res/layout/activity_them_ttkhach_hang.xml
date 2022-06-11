@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThemTTKhachHangActivity">
+
+    <TextView
+        android:id="@+id/txtLKH"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:hint="Tên khách hàng"
+        android:text="Thông tin khách hàng"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/txtTenKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/txtLKH"
+        android:layout_marginBottom="10dp"
+        android:hint="Tên khách hàng"
+        android:inputType="text"
+        android:drawablePadding="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/round_border"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenKhachHang"
+        android:hint="Giới tính"
+        android:background="@drawable/round_border"
+        android:inputType="text"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGioiTinh"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Địa chỉ"
+        android:background="@drawable/round_border"
+        android:inputType="text"
+        android:drawablePadding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtCMND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDiaChi"
+        android:hint="CMND"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:drawablePadding="16dp"
+        android:background="@drawable/round_border"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/txtSDTKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCMND"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:hint="SDT"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"></EditText>
+
+
+    <ImageView
+        android:id="@+id/imgHinhKhachHang"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/txtSDTKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image"
+        app:layout_constraintVertical_bias="0">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imgHinhKhachHang"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"></EditText>
+
+
+    <Button
+        android:id="@+id/btnAddTTKH"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtStatus"
+        android:background="@drawable/round_bg"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:text="Thêm TT Khách Hàng"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/btnTaoHD"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/btnAddTTKH"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_bg"
+        android:text="Tạo Hợp Đồng"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/btnComBacAddKH"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnTaoHD"
+        android:background="@drawable/round_bg"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:text="Come Back"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"></Button>
+</RelativeLayout>

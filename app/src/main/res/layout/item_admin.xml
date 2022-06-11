@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TÀI KHOẢN :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtTaiKhoan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/txtuser"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtuser"
+        android:layout_marginTop="10dp"
+        android:text="MẬT KHẨU :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtMatKhau"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTaiKhoan"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/txtpass"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtquyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpass"
+        android:layout_marginTop="14dp"
+        android:text="PHÂN QUYỀN :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtPhanQuyen"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMatKhau"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/txtquyen"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+
+    <ImageView
+        android:id="@+id/imgSuaAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@id/txtMatKhau"
+        android:background="@drawable/admin"
+        android:text="Sửa"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/txtPhanQuyen"
+        android:layout_marginTop="9dp"
+        android:background="@color/colorPrimary"></Button>
+</RelativeLayout>

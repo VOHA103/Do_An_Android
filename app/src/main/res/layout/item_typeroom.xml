@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="23dp"
+        android:background="@drawable/round_border"
+       >
+
+        <TextView
+            android:id="@+id/textItemNameTypeRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/labelTenLoai"
+            android:text="Loại Phòng A"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/labelGiaLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelTenLoai"
+            android:layout_marginTop="0dp"
+            android:text="Giá Loại : "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textItemPriceTypeRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textItemNameTypeRoom"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/labelGiaLoai"
+            android:text="3000000"
+            android:textColor="#C8275A"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/labelTenLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Loại : "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

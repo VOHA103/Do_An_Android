@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".HomePage">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                ///tieu de trang chu and sreach
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    app:title="Trang Chủ">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchViewMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+                    </androidx.appcompat.widget.SearchView>
+                </androidx.appcompat.widget.Toolbar>
+
+                //quang cao
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/cicrleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp">
+
+                    </me.relex.circleindicator.CircleIndicator>
+                </LinearLayout>
+
+
+                ///row 1
+
+                <RelativeLayout
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/iconRoom"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/icon_main">
+
+                        <ImageView
+                            android:id="@+id/imgRoom"
+                            android:layout_width="match_parent"
+                            android:layout_height="78dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/room">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgRoom"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="Quản lý phòng"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/iconService"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/iconRoom"
+                        android:background="@drawable/icon_main">
+
+                        <ImageView
+                            android:id="@+id/imgService"
+                            android:layout_width="170dp"
+                            android:layout_height="78dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/dichvu">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgService"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="Quản lý dịch vụ"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                //row 2:
+
+                <RelativeLayout
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/iconDienNuoc"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/icon_main">
+
+                        <ImageView
+                            android:id="@+id/imgDienNuoc"
+                            android:layout_width="match_parent"
+                            android:layout_height="78dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/utility">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgDienNuoc"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="Quản lý điện nước"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/iconAdmin"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iconDienNuoc"
+                        android:background="@drawable/icon_main">
+
+                        <ImageView
+                            android:id="@+id/imgAdmin"
+                            android:layout_width="match_parent"
+                            android:layout_height="78dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/iconss_admin">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgAdmin"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="Quản lý Admin"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#17539C"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hello This Is My Project Quan Ly Phong Tro"
+                        android:textSize="30sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"></ListView>
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

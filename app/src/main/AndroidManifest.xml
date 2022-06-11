@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.doanlaptrinhdidong">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home"
+        android:label="Đồ Án Nhà Trọ"
+        android:roundIcon="@drawable/home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoAnLapTrinhDiDong"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RoomDetailFalse"
+            android:exported="false" />
+        <activity
+            android:name=".TaoHopDongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThemTTKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContractPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Bill_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Bill_False"
+            android:exported="false" />
+        <activity
+            android:name=".RoomDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Update_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentShowService"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".FragmentShowTypeService"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ServicePage"
+            android:exported="true" />
+        <activity
+            android:name=".QLDichVu"
+            android:exported="true" />
+        <activity
+            android:name=".QLDienNuocPage"
+            android:exported="true" />
+        <activity
+            android:name=".RoomPage"
+            android:exported="true" />
+        <activity
+            android:name=".BottomNavigationMainActivity"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_border_contract">
+
+        <TextView
+            android:id="@+id/labelIDContract"
+            android:layout_width="153dp"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+            android:text="Mã Hợp Đồng : "
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textIDContract"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/labelIDContract"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="1"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/labelNameCustomer"
+            android:layout_width="156dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/labelIDContract"
+            android:gravity="center"
+            android:text="Tên Khách Hàng : "
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textNameCustomerContract"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textIDContract"
+            android:layout_toRightOf="@+id/labelNameCustomer"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="Nguyễn Văn A"
+            android:textColor="#C8275A"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/labelNameRoomCT"
+            android:layout_width="156dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/labelNameCustomer"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="Tên Phòng:  "
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textNameRoomContract"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textNameCustomerContract"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/labelNameRoomCT"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="Phòng 1"
+            android:textColor="#C8275A"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

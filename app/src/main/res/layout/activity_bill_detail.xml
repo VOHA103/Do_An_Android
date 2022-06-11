@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bill_False">
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="This is an unpaid payment"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelTitle"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Invoice"
+        android:textColor="#E80C6C"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelRoomBillDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelInvoice"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Room : "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelDatetimeBillDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelRoomBillDetail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Date : "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textRoomNameBillDetail"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelInvoice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/labelRoomBillDetail"
+        android:gravity="left"
+        android:text="Phòng 1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDatetimeBillDetail"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textRoomNameBillDetail"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/labelDatetimeBillDetail"
+        android:gravity="left"
+        android:text="16/08/2001"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelSumMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDatetimeBillDetail"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Total Money"
+        android:textColor="#E80C6C"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textTotalMoneyDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSumMoney"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="3000000"
+        android:textColor="#E80C6C"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonPayBill"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textTotalMoney"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="@drawable/round_border"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Pay"-->
+<!--        android:textSize="30sp">-->
+
+<!--    </Button>-->
+
+    <TextView
+        android:id="@+id/labelFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTotalMoneyDetail"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Please pay on time"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelFooter"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Thank You"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+</RelativeLayout>

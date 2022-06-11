@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomDetailFalse">
+    <TextView
+        android:id="@+id/textTitleRoom"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:text="Room detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/textDetailRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitleRoom"
+        android:gravity="center"
+        android:text="Phong 1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDetailTypeRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDetailRoomName"
+        android:gravity="center"
+        android:text="Phong Loai A"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageDetailRoom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textDetailTypeRoomName"
+        android:src="@drawable/banner1">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textDetailRoomAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageDetailRoom"
+        android:gravity="center"
+        android:text="35/24 Duong so 9, Phuong Hiep Binh Phuoc, Thanh pho Thu Duc"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonTraPhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDetailRoomAddress"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/round_border"
+        android:text="Tra Phong">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDetailRoomAddress"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="159dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/buttonTraPhong"
+        android:layout_toRightOf="@+id/buttonTraPhong"
+        android:background="@drawable/round_border"
+        android:text="Huy">
+
+    </Button>
+    <Button
+        android:id="@+id/btnThuePhong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttonHuy"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_border"
+        android:text="Thuê Phòng">
+
+    </Button>
+</RelativeLayout>

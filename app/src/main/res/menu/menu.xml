@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnutrangchu"
+        android:icon="@drawable/ic_baseline_home_work_24"
+        android:title="Trang Chủ"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/mnuhoadon"
+        android:icon="@drawable/ic_baseline_receipt_long_24"
+        android:title="Hoá Đơn"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/mnukhachthue"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="Khách Thuê"
+        android:iconTint="@null"
+app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/mnuhopdong"
+        android:icon="@drawable/ic_baseline_contacts_24"
+        android:title="Hợp Đồng"
+        app:showAsAction="always"
+
+
+        />
+
+</menu>

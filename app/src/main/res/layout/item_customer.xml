@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageKhachHang"
+            android:layout_width="100dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/banner2"></ImageView>
+
+        <TextView
+            android:id="@+id/textTenKhachHang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/imageKhachHang"
+            android:gravity="fill_vertical"
+            android:text="Lê Thanh Thái"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textTenKhachHang"
+            android:layout_toRightOf="@+id/imageKhachHang"
+            android:gravity="fill_vertical"
+            android:text="0384671870"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/imageKhachHang"
+            android:background="@color/colorPrimary"
+            ></TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
